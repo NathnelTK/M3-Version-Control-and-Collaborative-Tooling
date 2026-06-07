@@ -12,3 +12,5 @@ export function generateCertificate(studentId: string, courseId: string, type: C
 
 // TODO: remove - debug log
 // console.log('debug certificate generation')
+
+// fix: remove debug log and clean up
