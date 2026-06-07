@@ -23,3 +23,4 @@ return Math.round(
 item.functionalityScore * 0.7 + item.codeQualityScore * 0.3,
 );
 }}
+// temporary experiment in detached HEAD
