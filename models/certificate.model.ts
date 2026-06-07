@@ -9,3 +9,6 @@ export interface Certificate {
   issuedAt: string;
 }
 export function generateCertificate(studentId: string, courseId: string, type: CertificateType): Certificate { return { id: `CERT-${Date.now()}`, studentId, courseId, type, issuedAt: new Date().toISOString() }; }
+
+// TODO: remove - debug log
+// console.log('debug certificate generation')
