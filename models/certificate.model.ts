@@ -8,3 +8,4 @@ export interface Certificate {
   type: CertificateType;
   issuedAt: string;
 }
+export function generateCertificate(studentId: string, courseId: string, type: CertificateType): Certificate { return { id: `CERT-${Date.now()}`, studentId, courseId, type, issuedAt: new Date().toISOString() }; }
