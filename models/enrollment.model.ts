@@ -38,3 +38,15 @@ export function describeEnrollment(enrollment: EnrollmentStatus): string {
     }
   }
 }
+
+// Exercise 1: max capacity validator
+export const MAX_ENROLLMENT_CAPACITY = 30;
+
+export function validateEnrollmentCapacity(current: number): boolean {
+  if (current >= MAX_ENROLLMENT_CAPACITY) {
+    throw new RangeError(
+      `Enrollment capacity exceeded: max is `
+    );
+  }
+  return true;
+}
